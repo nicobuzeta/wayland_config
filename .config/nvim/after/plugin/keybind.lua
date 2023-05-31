@@ -115,3 +115,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Move half page up and down while mantaining cursor middle of page
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- WhichKey show registers
+vim.keymap.set("n", "\"", "<cmd>lua require('which-key').show('\"', {mode = 'n', auto = true})<cr>")
